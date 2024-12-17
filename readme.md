@@ -4,13 +4,32 @@
 
 This project implements the Dijkstra's Algorithm to find the shortest path between two positions marked as **X** on a rectangular board. The program processes the board, calculates the path cost, and displays only the fields that belong to the shortest path.
 
-## Rules of the Board
+---
+
+## **Project Goal**
+
+The goal of this project is to:
+
+1. Develop a Python implementation of **Dijkstra's Algorithm**.
+2. Solve a pathfinding problem on a grid where movement is restricted to horizontal and vertical directions.
+3. Respect specific rules, such as zero-cost fields (`J`) and fields marked as start and end positions (`X`).
+4. Provide modular, clean, and testable code.
+
+---
+
+## **Rules of the Board**
 
 - **Numbers (0-9):** Represent the cost of entering a cell.
-- **Letter J:** Represents fields with **zero cost** for entry and exit (special joker fields).
-- **Letter X:** Represents the **start** and **end** positions for the algorithm.
+- **Letter `J`:** Represents fields with **zero cost** for entry and exit (special joker fields).
+- **Letter `X`:** Represents the **start** and **end** positions for the algorithm.
 
-The program hides all fields that are **not part of the shortest path** and displays the **total cost** of the path.
+The program:
+
+- Finds the **least costly path** between two `X` positions.
+- Hides all fields that are **not part of the shortest path**.
+- Outputs the **total cost** of the path.
+
+---
 
 ## Project Structure
 
@@ -43,8 +62,8 @@ graph/
 Use Git to clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repository>.git
-cd <your-repository>
+git clone https://github.com/kat1478/shortest-path-finder.git
+cd <shortest-path-finder>
 ```
 
 ### 2. Run the Program
